@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF___Classes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF___Classes"
+        mc:Ignorable="d"
+        Title="Toy Box" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://images.unsplash.com/photo-1564115484-a4aaa88d5449?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFzdGVsJTIwY29sb3JzfGVufDB8fDB8fA%3D%3D&amp;ixlib=rb-1.2.1&amp;w=1000&amp;q=80"/>
+        </Grid.Background>
+        <Label Content="Manufacturer:" HorizontalAlignment="Left" Margin="91,86,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMan" HorizontalAlignment="Left" Margin="190,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="122,133,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="190,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Price:" HorizontalAlignment="Left" Margin="122,181,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Margin="190,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Image:" HorizontalAlignment="Left" Margin="122,228,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtImg" HorizontalAlignment="Left" Margin="190,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Add Toy" HorizontalAlignment="Left" Margin="167,275,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.109,0.42" Click="Button_Click" IsDefault="True"/>
+        <ListBox x:Name="ListToy" Margin="348,35,52,259" SelectionChanged="ListToy_SelectionChanged"/>
+        <Image x:Name="imgBox" HorizontalAlignment="Left" Height="191" Margin="365,194,0,0" VerticalAlignment="Top" Width="370"/>
+        <Label Content="Toy Box" HorizontalAlignment="Left" Margin="155,35,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>
